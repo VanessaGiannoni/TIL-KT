@@ -18,11 +18,11 @@ class ResultFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    private fun amountMeet(totalMen: Int, totalWomen: Int, totalChildren: Int): Double {
+    private fun amountMeat(totalMen: Int, totalWomen: Int, totalChildren: Int): Double {
         return 0
-            .plus(totalMen.times(200))
-            .plus(totalWomen.times(180))
-            .plus(totalChildren.times(100))
+            .plus(totalMen.times(300))
+            .plus(totalWomen.times(280))
+            .plus(totalChildren.times(150))
             .toDouble()
     }
 
@@ -59,7 +59,7 @@ class ResultFragment : Fragment() {
         val inputBeer = inflate.findViewById<EditText>(R.id.txtBeer)
         val inputSoda = inflate.findViewById<EditText>(R.id.txtSoda)
 
-        inputMeat.setText(String.format("%.2f", amountMeet(TOTAL_MEN, TOTAL_WOMEN, TOTAL_CHILDREN)))
+        inputMeat.setText(String.format("%.2f", amountMeat(TOTAL_MEN, TOTAL_WOMEN, TOTAL_CHILDREN)))
         inputMeat.isFocusable = false
         inputMeat.isFocusableInTouchMode = false
 
